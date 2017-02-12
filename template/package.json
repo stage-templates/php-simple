@@ -1,0 +1,23 @@
+{
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "scripts": {
+      "build": "npm run compser",
+      "composer": "composer dumpautload",
+      "deploy:prod": "npm run build && project-sync prod up",
+      "deploy:dev": "npm run build && project-sync dev up",
+      "postversion": "git push && git push --tags",
+      "serve": "npm run build && browser-sync start -c browsersync.config.js",
+      "watch": "npm run serve"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+      "browser-sync": "^2.18.7",
+      "dotenv": "^4.0.0",
+      "project-sync": "^1.0.0"
+  }
+}

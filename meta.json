@@ -1,0 +1,32 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A simple html project"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "composer_name": {
+      "type": "string",
+      "required": true,
+      "label": "Composer package name (<vendor>/<name>)",
+      "default": "vendor/name"
+    },
+    "dev_domain": {
+      "type": "string",
+      "required": true,
+      "label": "Local development domain (php-simple.dev)",
+      "default": "php-simple.dev"
+    }
+  },
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  yarn\n  composer install\n  cp .env.example .env\n  npm run watch"
+}

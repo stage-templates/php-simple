@@ -1,0 +1,7 @@
+{
+    "name": "{{ composer_name }}",
+    "description": "{{ description }}",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {}
+}
