@@ -9,7 +9,7 @@
       "type": "string",
       "required": true,
       "label": "Project description",
-      "default": "A simple html project"
+      "default": "A simple php project"
     },
     "author": {
       "type": "string",
