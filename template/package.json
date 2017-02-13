@@ -4,8 +4,8 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-      "build": "npm run compser",
-      "composer": "composer dumpautload",
+      "build": "npm run composer",
+      "composer": "composer dumpautoload",
       "deploy:prod": "npm run build && project-sync prod up",
       "deploy:dev": "npm run build && project-sync dev up",
       "postversion": "git push && git push --tags",
